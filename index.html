@@ -1,0 +1,165 @@
+<html>
+<head>
+	<title>LearnJS</title>
+</head>
+<style>
+	body{
+		padding:200px;
+		background: purple;
+	}
+	.head{
+		position: relative;
+		width: 10px;
+		height: 10px;
+		border-bottom-left-radius: 20px;
+		border-bottom: 200px solid #ecbcb4;
+		border-left:160px solid transparent;
+		border-right: 160px solid transparent;
+		transform: rotate(150deg);
+	}
+	.head::before{
+		content: "";
+		position: absolute;
+		width: 120px;
+		height: 200px;
+		top: 100px;
+		left: -36px;
+		border:  5px solid #a1665e;
+		border-color: #a1665e transparent transparent transparent ;
+		border-radius: 50%/10px 10px 0 0;
+	}
+	.head::after{
+		content: "";
+		position: absolute;
+		height: 20px;
+		width: 34px;
+		background: #ecbcb4;
+		border: 2px solid #a1665e;
+		border-bottom: none;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		transform: rotate(-51deg);
+		top: 110px;
+		left: -122px;
+
+	}
+	.eye1{
+		position: relative;
+		height: 70px;
+		width:80px;
+		background: white;
+		border-radius: 50%;
+		border: 2px solid black;
+		transform: rotate(-30deg);
+		left: 100px;
+		top: -250px;
+	}
+	.eye1::before{
+		content:"";
+		position: absolute;
+		height: 22px;
+		width: 26px;
+		border-radius: 50%;
+		background: #1d1d38;
+		top: 28px;
+		left: 10px;
+		transform: rotate(-10deg);
+	}
+	.eye1::after{
+		content:"";
+		position: absolute;
+		height: 8px;
+		width: 10px;
+		border-radius: 50%;
+		background: #fff;
+		top: 35px;
+		left: 24px;
+		transform: rotate(-10deg);
+		box-shadow: 100px 36px 0 -1px #a1665e,
+					70px 36px 0 -1px #a1665e,
+					85px 50px 0 -1px #a1665e;
+	}
+		.eye2{
+		position: relative;
+		height: 70px;
+		width:80px;
+		background: white;
+		border-radius: 50%;
+		border: 2px solid black;
+		transform: rotate(-30deg);
+		left: 42px;
+		top: -307px;
+		z-index: -1;
+
+	}
+	.eye2::before{
+		content:"";
+		position: absolute;
+		height: 22px;
+		width: 26px;
+		border-radius: 50%;
+		background: #1d1d38;
+		top: 28px;
+		left: 10px;
+		transform: rotate(-10deg);
+	}
+	.eye2::after{
+		content:"";
+		position: absolute;
+		height: 8px;
+		width: 10px;
+		border-radius: 50%;
+		background: #fff;
+		top: 35px;
+		left: 24px;
+		transform: rotate(-10deg);
+	}
+	.hair>div:nth-child(1) {
+		position: relative;
+		background: transparent;
+		height: 30px;
+		width: 110px;
+		border-top: 20px solid red;
+		border-radius: 50px 40px 0 0;
+		top: -440px;
+		left: 180px;
+		transform: rotate(28deg);
+	}
+	.hair>div:nth-child(2) {
+		position: relative;
+		background: transparent;
+		height: 30px;
+		width: 100px;
+		border-top: 20px solid red;
+		border-radius: 50px 40px 0 0;
+		top: -480px;
+		left: 190px;
+		transform: rotate(10deg);
+	}
+	.hair>div:nth-child(3) {
+		position: relative;
+		background: transparent;
+		height: 30px;
+		width: 100px;
+		border-top: 20px solid red;
+		border-radius: 50px 40px 0 0;
+		top: -540px;
+		left: 190px;
+		transform: rotate(67deg);
+	}
+</style>
+
+<body>
+	<div class="head"></div>
+	<div class="eye1"></div>
+	<div class="eye2"></div>
+	<div class="hair">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</script>
+</body>
+</html>
